@@ -1,0 +1,12 @@
+version: '3.1'
+services:
+  db:
+    image: mysql:5.7
+    container_name: mysql_suryveyapi_tests
+    environment:
+      MYSQL_ALLOW_EMPTY_PASSWORD: 1
+      MYSQL_DATABASE: surveyapi_tests
+    volumes:
+      - ./changescripts:/docker-entrypoint-initdb.d
+    ports:
+      - 3308:3306

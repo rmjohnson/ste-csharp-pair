@@ -1,0 +1,21 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="NUnit" Version="3.12.0" />
+    <PackageReference Include="NUnit3TestAdapter" Version="3.16.1" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.5.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+  	<ProjectReference Include="..\..\src\Faithlife.SurveyApi\Faithlife.SurveyApi.csproj" />
+    <ProjectReference Include="..\..\src\Faithlife.SurveyApi.Core\Faithlife.SurveyApi.Core.csproj" />
+    <ProjectReference Include="..\..\src\Faithlife.SurveyApi.v1.Client\Faithlife.SurveyApi.v1.Client.csproj" />
+  </ItemGroup>
+
+</Project>

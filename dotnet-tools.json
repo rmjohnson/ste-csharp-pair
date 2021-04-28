@@ -1,0 +1,24 @@
+{
+	"version": 1,
+	"isRoot": true,
+	"tools": {
+	  "fsdgenaspnet": {
+		"version": "2.1.1",
+		"commands": [
+		  "fsdgenaspnet"
+		]
+	  },
+	  "fsdgencsharp": {
+		"version": "2.4.1",
+		"commands": [
+		  "fsdgencsharp"
+		]
+	  },
+	  "fsdgenjs": {
+		"version": "2.1.1",
+		"commands": [
+		  "fsdgenjs"
+		]
+	  }
+	}
+  }

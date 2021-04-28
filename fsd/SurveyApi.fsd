@@ -1,0 +1,51 @@
+[csharp(namespace: Faithlife.SurveyApi.v1.Client)]
+service SurveyApi
+{
+	/// Create a survey
+	[http(method: POST, path: "/surveys")]
+	method createSurvey
+	{
+		survey: Survey;
+	}:
+	{
+		survey: Survey;
+	}
+
+	data Survey
+	{
+		id: string;
+		title: string;
+		questions: Question[];
+	}
+
+	data Question
+	{
+		id: string;
+		prompt: string;
+	}
+
+	/// Submit a response to a survey
+	[http(method: POST, path: "/surveys/response")]
+	method submitSurveyResponse
+	{
+		response: SurveyResponse;
+	}:
+	{
+		response: SurveyResponse;
+	}
+
+	data SurveyResponse
+	{
+		surveyResponseId: string;
+		surveyId: string;
+		customerName: string;
+		customerEmail: string;
+		questionResponses: QuestionResponse[];
+	}
+
+	data QuestionResponse
+	{
+		questionId: string;
+		response: string;
+	}
+}

@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\Faithlife.SurveyApi.v1.Client\Faithlife.SurveyApi.v1.Client.csproj" />
+    <ProjectReference Include="..\Faithlife.SurveyApi.Data\Faithlife.SurveyApi.Data.csproj" />
+	<ProjectReference Include="..\Faithlife.SurveyApi\Faithlife.SurveyApi.csproj" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+</Project>
